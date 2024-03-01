@@ -6,9 +6,20 @@
 
 :root {
   --font: "Quicksand", sans-serif;
+  --primary-color: #2D9596;
+  --secondary-color: #9AD0C2;
+  --light-color: #F1FADA;
+  --dark-color: #083344;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
 }
 
 
+html,
 body {
+  height: 100%;
   font-family: var(--font);
+  background: var(--dark-color);
+  color: var(--light-color);
 }
