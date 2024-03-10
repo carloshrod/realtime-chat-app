@@ -3,7 +3,7 @@ import { GitHub } from 'react-feather';
 
 const Footer = () => {
 	return (
-		<footer className='bg-cyan-900 p-4 text-center'>
+		<footer className='p-4 text-center bg-zinc-900'>
 			<div className='container mx-auto'>
 				<div className='flex justify-center pt-2'>
 					<p>Developed by </p>
@@ -11,7 +11,7 @@ const Footer = () => {
 						href='https://github.com/carloshrod'
 						target='_blank'
 						rel='noopener noreferrer'
-						className='flex justify-center rounded-full hover:shadow-lg hover:shadow-cyan-800 px-1 pb-1'
+						className='outline-none flex justify-center transition duration-150 ease-in-out ml-1 shadow-text'
 					>
 						<span className='font-bold'>CHRod</span>
 						<GitHub className='m-auto' size={18} />

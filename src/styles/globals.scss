@@ -6,20 +6,98 @@
 
 :root {
   --font: "Quicksand", sans-serif;
-  --primary-color: #2D9596;
-  --secondary-color: #9AD0C2;
-  --light-color: #F1FADA;
-  --dark-color: #083344;
+  --indigo: #3730a3;
+  --indigo-light: #a5b4fc;
+  --light-color: #eef2ff;
+  --dark-color: #18181b;
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html,
-body {
+body,
+footer,
+header {
   height: 100%;
   font-family: var(--font);
   background: var(--dark-color);
   color: var(--light-color);
+}
+
+.shadow-text:hover,
+.shadow-text:focus {
+  text-shadow: 0 4px 8px rgb(59, 113, 202, 0.5);
+}
+
+.chat,
+nav {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--indigo-light);
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #27272a;
+    border-radius: 3px;
+  }
+}
+
+@media (max-height: 600px) {
+  .h-responsive {
+    height: 330px;
+  }
+}
+
+@media ((min-height:601px) and (max-height: 700px)) {
+  .h-responsive {
+    height: 400px;
+  }
+}
+
+@media ((min-height:701px) and (max-height: 800px)) {
+  .h-responsive {
+    height: 460px;
+  }
+}
+
+@media ((min-height:801px) and (max-height: 900px)) {
+  .h-responsive {
+    height: 580px;
+  }
+}
+
+@media ((min-height:901px) and (max-height: 1000px)) {
+  .h-responsive {
+    height: 650px;
+  }
+}
+
+@media ((min-height:1001px) and (max-height: 1100px)) {
+  .h-responsive {
+    height: 750px;
+  }
+}
+
+@media ((min-height:1101px) and (max-height: 1200px)) {
+  .h-responsive {
+    height: 880px;
+  }
+}
+
+@media ((min-height:1201px) and (max-height: 1368px)) {
+  .h-responsive {
+    height: 1050px;
+  }
 }
